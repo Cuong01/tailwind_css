@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ntv-topmenu-expanded {
+  @apply absolute mt-52 z-10 w-full bg-white text-center animate-slideDown;
+}
+.ntc-top-menu-item {
+  @apply cursor-pointer py-1 hover:text-coffee-200 relative after:absolute after:bottom-0 after:left-0 after:bg-coffee-200 after:lg:w-full
+                            after:lg:h-0 hover:after:lg:h-0.5;
+}
+.ntc-top-menu-item-active {
+  @apply text-coffee-200;
+}
+.ntc-badge-cricle {
+  @apply text-xs rounded-full text-center px-1;
+}

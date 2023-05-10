@@ -2,44 +2,609 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../output.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <script src="./main.js" type="text/javascript" async></script>
     <title>Document</title>
 </head>
 
 <body>
     <div id="root">
-        <div class="content-wraper">
-            <header>
-                Header
+        <div class="content-wraper max-w-screen-2xl mx-auto text-base px-4 sm:px-8">
+            <header class="md:mx-10">
+                <nav class="flex flex-row justify-between items-center relative">
+                    <div class="logo lg:basis-1/6 text-center text-xl font-bold cursor-pointer flex">
+                        <img src="../photos/logo-coffe.png" alt="" width="100px" height="100px" />
+                        <span class="py-6">Coffee.</span>
+                    </div>
+                    <ul id="ntc-top-menu"
+                        class="lg:basis-4/6 lg:flex hidden lg:items-center lg:justify-end lg:gap-8 text-sm text-gray-500 font-medium">
+                        <li class="ntc-top-menu-item">
+                            <a class="ntc-top-menu-item-active" href="">Home</a>
+                        </li>
+                        <li class="ntc-top-menu-item">
+                            <a class="" href="">Product</a>
+                        </li>
+                        <li class="ntc-top-menu-item">
+                            <a class="" href="">Blog</a>
+                        </li>
+                        <li class="ntc-top-menu-item">
+                            <a class="" href="">About</a>
+                        </li>
+                        <li class="ntc-top-menu-item">
+                            <a class="" href="">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="lg:basis-1/6 justify-start sm:ml-12 text-sm text-gray-700 font-medium items-center">
+                        <li class="">
+                            <a href="" class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline-block">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                </svg>
+
+                                <span class="mx-1 font-bold items-center">Cart</span>
+                                <span class="ntc-badge-cricle bg-orange-700 text-white items-center">5</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="lg:hidden items-center">
+                        <svg id="ntc-toggle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                        </svg>
+                    </div>
+                </nav>
             </header>
             <main>
-                <div class="slider">
-                    Slider
+                <div class="slider h-[540px] bg-[url('./photos/cafe.jpg')] bg-cover bg-no-repeat">
+                    <div class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-20">
+                        <div class="mx-10 text-white text-center">
+                            <div class="uppercase mb-6">Best Place to buy coffee</div>
+                            <div class="font-medium text-5xl mb-6">Coffee Mugs</div>
+                            <div class="text-lg mb-8">
+                                The most versatile furniture system ever created. Designed to
+                                fit your life, made to move and grow.
+                            </div>
+                            <div class="flex justify-center">
+                                <div
+                                    class="text-black bg-white px-8 py-4 w-max tracking-wider text-sm font-medium cursor-pointer hover:bg-opacity-90">
+                                    EXPLORE OUR PRODUCTS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="story">
-                    story
+                <div class="story flex justify-center items-center">
+                    <div class="px-5 sm:px-16 lg:px-56 xl:px-72 py-16 md:py-32 text-center">
+                        <div class="text-3xl mb-6 font-normal">
+                            What is your most special coffee?
+                        </div>
+                        <div class="text-gray-500 text-sm leading-7 mb-6">
+                            The French Press is a brewing method that comes closest to
+                            cupping. Cupping is the prescribed method by which coffee should
+                            be judged. Nothing separates the water from the coffee. To
+                            properly discover the flavours, it is best to drink the coffee
+                            this way. Everyone has their favourite brewing method.
+                        </div>
+                        <div class="">
+                            <a href=""
+                                class="text-coffee-400 hover:text-coffee-600 relative text-base font-medium after:absolute after:-bottom-1 after:left-0 after:bg-coffee-50 hover:after:bg-coffee-400 after:w-full after:h-0.5">Read
+                                the full Story</a>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="featured-mugs">
-                    featured-mugs
+                    <div class="flex justify-center items-center mb-24">
+                        <div class="w-8 h-px bg-gray-300"></div>
+                        <div class="uppercase mx-4 tracking-widest text-center font-medium text-gray-600 text-xs">
+                            featured mugs
+                        </div>
+                        <div class="w-8 h-px bg-gray-300"></div>
+                    </div>
+                    <div class="w-[95%] lg:w-[65%] mx-auto mb-24">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4">
+                            <div class="ntc-product-cad">
+                                <div
+                                    class="h-[400px] sm:h-[540px] bg-[url('./photos/coffee01.jpg')] bg-cover bg-no-repeat bg-center">
+                                    <a href="#" alt="a">
+                                        <div
+                                            class="w-full h-full hover:bg-gray-950 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                            <div
+                                                class="absolute w-[100px] bg-white text-center text-coffee-400 right-3 top-3 font-semibold px-4 py-2">
+                                                On Sale.
+                                            </div>
+                                            <div
+                                                class="absolute bg-white text-center text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-showBT uppercase tracking-wider py-4 px-8 text-sm font-semibold cursor-pointer hover:bg-opacity-90">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center mt-8">
+                                    <a href="#">
+                                        <div class="text-xl hover:text-coffee-400 mb-3">
+                                            Pink Premium Ceramic
+                                        </div>
+                                    </a>
+                                    <div class="">
+                                        <span class="text-lg text-red-600">$50.00</span>
+                                        <span class="text-gray-400 text-sm ml-2 line-through">$69.00 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ntc-product-cad">
+                                <div
+                                    class="h-[400px] sm:h-[540px] bg-[url('./photos/coffee02.jpg')] bg-cover bg-no-repeat bg-center">
+                                    <a href="#" alt="b">
+                                        <div
+                                            class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                            <div
+                                                class="absolute w-[100px] bg-white text-center text-coffee-400 right-3 top-3 font-semibold px-4 py-2">
+                                                On Sale.
+                                            </div>
+                                            <div
+                                                class="absolute bg-white text-center text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-showBT uppercase tracking-wider py-4 px-8 text-sm font-semibold cursor-pointer hover:bg-opacity-90">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center mt-8">
+                                    <a href="#">
+                                        <div class="text-xl hover:text-coffee-400 mb-3">
+                                            Pink Premium Ceramic
+                                        </div>
+                                    </a>
+                                    <div class="">
+                                        <span class="text-lg text-gray-600">$40.00 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="more-products">
-                    more-products
+                    <div class="flex justify-center items-center mb-24">
+                        <div class="w-8 h-px bg-gray-300"></div>
+                        <div class="uppercase mx-4 tracking-widest text-center font-medium text-gray-600 text-xs">
+                            more products
+                        </div>
+                        <div class="w-8 h-px bg-gray-300"></div>
+                    </div>
+                    <div class="w-[95%] lg:w-[65%] mx-auto mb-24">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4">
+                            <div class="ntc-product-cad">
+                                <div
+                                    class="h-[380px] bg-[url('./photos/coffee01.jpg')] bg-cover bg-no-repeat bg-center">
+                                    <a href="#" alt="a">
+                                        <div
+                                            class="w-full h-full hover:bg-gray-950 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                            <div
+                                                class="absolute w-[60px] bg-white text-center text-sm text-coffee-400 right-3 top-3 font-semibold px-2 py-2">
+                                                On Sale.
+                                            </div>
+                                            <div
+                                                class="absolute bg-white text-center text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-showBT uppercase tracking-wider py-3 px-6 text-sm font-semibold cursor-pointer hover:bg-opacity-90">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center my-8">
+                                    <a href="#">
+                                        <div class="text-xl hover:text-coffee-400 mb-3">
+                                            Pink Premium Ceramic
+                                        </div>
+                                    </a>
+                                    <div class="">
+                                        <span class="text-lg text-red-600">$50.00</span>
+                                        <span class="text-gray-400 text-sm ml-2 line-through">$69.00 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ntc-product-cad">
+                                <div
+                                    class="h-[380px] bg-[url('./photos/coffee02.jpg')] bg-cover bg-no-repeat bg-center">
+                                    <a href="#" alt="a">
+                                        <div
+                                            class="w-full h-full hover:bg-gray-950 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                            <div
+                                                class="absolute w-[60px] bg-white text-center text-sm text-coffee-400 right-3 top-3 font-semibold px-2 py-2">
+                                                On Sale.
+                                            </div>
+                                            <div
+                                                class="absolute bg-white text-center text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-showBT uppercase tracking-wider py-3 px-6 text-sm font-semibold cursor-pointer hover:bg-opacity-90">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center my-8">
+                                    <a href="#">
+                                        <div class="text-xl hover:text-coffee-400 mb-3">
+                                            Pink Premium Ceramic
+                                        </div>
+                                    </a>
+                                    <div class="">
+                                        <span class="text-lg text-gray-600">$40.00 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ntc-product-cad">
+                                <div
+                                    class="h-[380px] bg-[url('./photos/coffee01.jpg')] bg-cover bg-no-repeat bg-center">
+                                    <a href="#" alt="a">
+                                        <div
+                                            class="w-full h-full hover:bg-gray-950 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                            <div
+                                                class="absolute w-[60px] bg-white text-center text-sm text-coffee-400 right-3 top-3 font-semibold px-2 py-2">
+                                                On Sale.
+                                            </div>
+                                            <div
+                                                class="absolute bg-white text-center text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-showBT uppercase tracking-wider py-3 px-6 text-sm font-semibold cursor-pointer hover:bg-opacity-90">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center my-8">
+                                    <a href="#">
+                                        <div class="text-xl hover:text-coffee-400 mb-3">
+                                            Pink Premium Ceramic
+                                        </div>
+                                    </a>
+                                    <div class="">
+                                        <span class="text-lg text-red-600">$50.00</span>
+                                        <span class="text-gray-400 text-sm ml-2 line-through">$69.00 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ntc-product-cad">
+                                <div
+                                    class="h-[380px] bg-[url('./photos/coffee01.jpg')] bg-cover bg-no-repeat bg-center">
+                                    <a href="#" alt="a">
+                                        <div
+                                            class="w-full h-full hover:bg-gray-950 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                            <div
+                                                class="absolute w-[60px] bg-white text-center text-sm text-coffee-400 right-3 top-3 font-semibold px-2 py-2">
+                                                On Sale.
+                                            </div>
+                                            <div
+                                                class="absolute bg-white text-center text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-showBT uppercase tracking-wider py-3 px-6 text-sm font-semibold cursor-pointer hover:bg-opacity-90">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center my-8">
+                                    <a href="#">
+                                        <div class="text-xl hover:text-coffee-400 mb-3">
+                                            Pink Premium Ceramic
+                                        </div>
+                                    </a>
+                                    <div class="">
+                                        <span class="text-lg text-red-600">$50.00</span>
+                                        <span class="text-gray-400 text-sm ml-2 line-through">$69.00 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ntc-product-cad">
+                                <div
+                                    class="h-[380px] bg-[url('./photos/coffee01.jpg')] bg-cover bg-no-repeat bg-center">
+                                    <a href="#" alt="a">
+                                        <div
+                                            class="w-full h-full hover:bg-gray-950 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                            <div
+                                                class="absolute w-[60px] bg-white text-center text-sm text-coffee-400 right-3 top-3 font-semibold px-2 py-2">
+                                                On Sale.
+                                            </div>
+                                            <div
+                                                class="absolute bg-white text-center text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-showBT uppercase tracking-wider py-3 px-6 text-sm font-semibold cursor-pointer hover:bg-opacity-90">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center my-8">
+                                    <a href="#">
+                                        <div class="text-xl hover:text-coffee-400 mb-3">
+                                            Pink Premium Ceramic
+                                        </div>
+                                    </a>
+                                    <div class="">
+                                        <span class="text-lg text-red-600">$50.00</span>
+                                        <span class="text-gray-400 text-sm ml-2 line-through">$69.00 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ntc-product-cad">
+                                <div
+                                    class="h-[380px] bg-[url('./photos/coffee01.jpg')] bg-cover bg-no-repeat bg-center">
+                                    <a href="#" alt="a">
+                                        <div
+                                            class="w-full h-full hover:bg-gray-950 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                            <div
+                                                class="absolute w-[60px] bg-white text-center text-sm text-coffee-400 right-3 top-3 font-semibold px-2 py-2">
+                                                On Sale.
+                                            </div>
+                                            <div
+                                                class="absolute bg-white text-center text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-showBT uppercase tracking-wider py-3 px-6 text-sm font-semibold cursor-pointer hover:bg-opacity-90">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center my-8">
+                                    <a href="#">
+                                        <div class="text-xl hover:text-coffee-400 mb-3">
+                                            Pink Premium Ceramic
+                                        </div>
+                                    </a>
+                                    <div class="">
+                                        <span class="text-lg text-red-600">$50.00</span>
+                                        <span class="text-gray-400 text-sm ml-2 line-through">$69.00 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ntc-product-cad">
+                                <div
+                                    class="h-[380px] bg-[url('./photos/coffee01.jpg')] bg-cover bg-no-repeat bg-center">
+                                    <a href="#" alt="a">
+                                        <div
+                                            class="w-full h-full hover:bg-gray-950 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                            <div
+                                                class="absolute w-[60px] bg-white text-center text-sm text-coffee-400 right-3 top-3 font-semibold px-2 py-2">
+                                                On Sale.
+                                            </div>
+                                            <div
+                                                class="absolute bg-white text-center text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-showBT uppercase tracking-wider py-3 px-6 text-sm font-semibold cursor-pointer hover:bg-opacity-90">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center my-8">
+                                    <a href="#">
+                                        <div class="text-xl hover:text-coffee-400 mb-3">
+                                            Pink Premium Ceramic
+                                        </div>
+                                    </a>
+                                    <div class="">
+                                        <span class="text-lg text-red-600">$50.00</span>
+                                        <span class="text-gray-400 text-sm ml-2 line-through">$69.00 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ntc-product-cad">
+                                <div
+                                    class="h-[380px] bg-[url('./photos/coffee01.jpg')] bg-cover bg-no-repeat bg-center">
+                                    <a href="#" alt="a">
+                                        <div
+                                            class="w-full h-full hover:bg-gray-950 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                            <div
+                                                class="absolute w-[60px] bg-white text-center text-sm text-coffee-400 right-3 top-3 font-semibold px-2 py-2">
+                                                On Sale.
+                                            </div>
+                                            <div
+                                                class="absolute bg-white text-center text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-showBT uppercase tracking-wider py-3 px-6 text-sm font-semibold cursor-pointer hover:bg-opacity-90">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center my-8">
+                                    <a href="#">
+                                        <div class="text-xl hover:text-coffee-400 mb-3">
+                                            Pink Premium Ceramic
+                                        </div>
+                                    </a>
+                                    <div class="">
+                                        <span class="text-lg text-red-600">$50.00</span>
+                                        <span class="text-gray-400 text-sm ml-2 line-through">$69.00 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ntc-product-cad">
+                                <div
+                                    class="h-[380px] bg-[url('./photos/coffee01.jpg')] bg-cover bg-no-repeat bg-center">
+                                    <a href="#" alt="a">
+                                        <div
+                                            class="w-full h-full hover:bg-gray-950 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                            <div
+                                                class="absolute w-[60px] bg-white text-center text-sm text-coffee-400 right-3 top-3 font-semibold px-2 py-2">
+                                                On Sale.
+                                            </div>
+                                            <div
+                                                class="absolute bg-white text-center text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-showBT uppercase tracking-wider py-3 px-6 text-sm font-semibold cursor-pointer hover:bg-opacity-90">
+                                                Explore Mug
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center my-8">
+                                    <a href="#">
+                                        <div class="text-xl hover:text-coffee-400 mb-3">
+                                            Pink Premium Ceramic
+                                        </div>
+                                    </a>
+                                    <div class="">
+                                        <span class="text-lg text-red-600">$50.00</span>
+                                        <span class="text-gray-400 text-sm ml-2 line-through">$69.00 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="coffee-magazins">
-                    coffee-magazins
+                    <div class="flex justify-center items-center mb-24">
+                        <div class="w-8 h-px bg-gray-300"></div>
+                        <div class="uppercase mx-4 tracking-widest font-medium text-center text-gray-600 text-xs">
+                            BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE
+                        </div>
+                        <div class="w-8 h-px bg-gray-300"></div>
+                    </div>
+                    <div
+                        class="w-[95%] lg:w-[65%] mx-auto mb-24 flex flex-col md:flex-row justify-center items-center gap-3 md:gap-5">
+                        <div
+                            class="ntc-magazin-image basis-1/2 md:flex md:flex-row gap-3 md:gap-5 w-full h-full mb-8 md:mb-0">
+                            <div
+                                class="h-[280px] bg-[url('./photos/magazine-image-01.jpeg')] bg-cover bg-no-repeat bg-center basis-2/3">
+                            </div>
+                            <div class="basis-1/3 flex flex-row md:flex-col gap-3 md:gap-4 mt-4 md:mt-0">
+                                <div
+                                    class="h-[130px] basis-1/2 bg-[url('./photos/magazine-image-02.jpeg')] bg-cover bg-no-repeat bg-center">
+                                </div>
+                                <div
+                                    class="h-[130px] basis-1/2 bg-[url('./photos/magazine-image-03.jpeg')] bg-cover bg-no-repeat bg-center ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ntc-magazin-post basis-1/2 text-center md:text-left md:pl-8 xl:pl-14">
+                            <div class="mb-4 text-gray-400 text-xs font-semibold uppercase tracking-wider">PREMIUM OFFER
+                            </div>
+                            <div class="mb-4 text-3xl font-semibold ">Get our Coffee Magazine</div>
+                            <div class="text-gray-400 mb-4">The most versatile furniture system ever created. Designed
+                                to fit
+                                your life.</div>
+                            <div
+                                class="bg-black text-white py-2 px-4 w-max mx-auto md:mx-0 hover:bg-opacity-90 cursor-pointer">
+                                Start Shopping
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="ntc-parallax bg-[url('./photos/bg01.jpg')] bg-cover bg-no-repeat bg-center h-[340px] mb-24 bg-fixed w-[100vw] relative left-[calc(-50vw+50%)]">
                 </div>
                 <div class="lifestyle-stories">
-                    lifestyle-stories
+                    <div class="flex justify-center items-center mb-24">
+                        <div class="w-8 h-px bg-gray-300"></div>
+                        <div class="uppercase mx-4 tracking-widest font-medium text-center text-gray-600 text-xs">
+                            BEHIND THE MUGS, LIFESTYLE STORIES
+                        </div>
+                        <div class="w-8 h-px bg-gray-300"></div>
+                    </div>
+                    <div class="w-[95%] lg:w-[65%] mx-auto mb-24">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4">
+                            <div class="ntc-lifestyle-stories-cad">
+                                <div
+                                    class="h-[380px] bg-[url('./photos/coffee01.jpg')] bg-cover bg-no-repeat bg-center">
+                                    <a href="#" alt="a">
+                                        <div
+                                            class="w-full h-full hover:bg-gray-950 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                            <div
+                                                class="absolute bg-white text-center text-gray-600 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-showBT uppercase tracking-wider py-3 px-6 text-xs font-semibold cursor-pointer hover:bg-opacity-90">
+                                                READ THE FULL STORY
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-left my-8">
+                                    <a href="#">
+                                        <div class="text-lg mb-4 font-semibold hover:text-coffee-400 tracking-wide">
+                                            Health Check: why do I get a headache when I haven't had my coffee?
+                                        </div>
+                                    </a>
+                                    <div class="mb-4 text-gray-400 tracking-wide">
+                                        It is a paradisematic country, in which roasted parts of sentences fly into your
+                                        mouth.
+                                    </div>
+                                    <div class="uppercase text-gray-400 text-sm">May 9, 2023</div>
+                                </div>
+                            </div>
+                            <div class="ntc-lifestyle-stories-cad">
+                                <div
+                                    class="h-[380px] bg-[url('./photos/coffee02.jpg')] bg-cover bg-no-repeat bg-center">
+                                    <a href="#" alt="a">
+                                        <div
+                                            class="w-full h-full hover:bg-gray-950 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+
+                                            <div
+                                                class="absolute bg-white text-center text-gray-600 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-showBT uppercase tracking-wider py-3 px-6 text-xs font-semibold cursor-pointer hover:bg-opacity-90">
+                                                READ THE FULL STORY
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-left my-8">
+                                    <a href="#">
+                                        <div class="text-lg mb-4 font-semibold hover:text-coffee-400 tracking-wide">
+                                            Health Check: why do I get a headache when I haven't had my coffee?
+                                        </div>
+                                    </a>
+                                    <div class="mb-4 text-gray-400 tracking-wide">
+                                        It is a paradisematic country, in which roasted parts of sentences fly into your
+                                        mouth.
+                                    </div>
+                                    <div class="uppercase text-gray-400 text-sm">May 9, 2023</div>
+                                </div>
+                            </div>
+                            <div class="ntc-lifestyle-stories-cad">
+                                <div
+                                    class="h-[380px] bg-[url('./photos/coffee01.jpg')] bg-cover bg-no-repeat bg-center">
+                                    <a href="#" alt="a">
+                                        <div
+                                            class="w-full h-full hover:bg-gray-950 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                            <div
+                                                class="absolute bg-white text-center text-gray-600 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-showBT uppercase tracking-wider py-3 px-6 text-xs font-semibold cursor-pointer hover:bg-opacity-90">
+                                                READ THE FULL STORY
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-left my-8">
+                                    <a href="#">
+                                        <div class="text-lg mb-4 font-semibold hover:text-coffee-400 tracking-wide">
+                                            Health Check: why do I get a headache when I haven't had my coffee?
+                                        </div>
+                                    </a>
+                                    <div class="mb-4 text-gray-400 tracking-wide">
+                                        It is a paradisematic country, in which roasted parts of sentences fly into your
+                                        mouth.
+                                    </div>
+                                    <div class="uppercase text-gray-400 text-sm">May 9, 2023</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="subscribe">
-                    subscribe
+                <div
+                    class="subscribe bg-coffee-400 h-[350px] flex flex-col justify-center items-center text-center mb-24">
+                    <div class="flex justify-center items-center mb-6">
+                        <div class="w-8 h-px bg-gray-300"></div>
+                        <div class="uppercase mx-4 tracking-widest font-medium text-center text-gray-300 text-xs">
+                            SIGN UP AND GET FREE COFFEE BAGS
+                        </div>
+                        <div class="w-8 h-px bg-gray-300"></div>
+                    </div>
+                    <div class="text-4xl mb-6 text-white">Coffee Updates</div>
+                    <div class="md:flex ">
+                        <div>
+                            <input type="email" placeholder="Email" class="py-2 px-4 w-[280px] md:w-[350px]">
+                        </div>
+                        <div>
+                            <button type="submit"
+                                class="w-max mt-3 md:mt-0 md:ml-2 bg-white text-gray-800 py-2 px-4 hover:bg-opacity-90 cursor-pointer">Supscribe</button>
+                        </div>
+                    </div>
                 </div>
             </main>
             <footer>
-                footer
+                <div class="h-[380px]">
+                    <div class="flex">
+                        <div></div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                </div>
+
             </footer>
         </div>
     </div>
